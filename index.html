@@ -1,0 +1,66 @@
+‎<!DOCTYPE html>
+‎<html lang="en">
+‎<head>
+‎    <meta charset="UTF-8">
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎    <title>Md. Riad Hasan Mirja | Portfolio</title>
+‎    <script src="https://cdn.tailwindcss.com"></script>
+‎    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+‎    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+‎    <style>
+‎        body { background-color: #050505; color: white; overflow-x: hidden; cursor: none; }
+‎        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+‎        #cursor { width: 20px; height: 20px; background: #00f2ff; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; mix-blend-mode: difference; transition: transform 0.1s ease; }
+‎        .hero-text { font-size: 5rem; line-height: 1; font-weight: 800; background: linear-gradient(to right, #fff, #555); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+‎    </style>
+‎</head>
+‎<body>
+‎
+‎    <div id="cursor"></div>
+‎
+‎    <nav class="fixed w-full p-6 z-50 flex justify-between items-center glass mt-4 mx-auto max-w-5xl left-0 right-0 rounded-full">
+‎        <div class="font-bold text-xl tracking-tighter">MD. RIAD HASAN MIRJA</div>
+‎        <ul class="flex gap-8 opacity-70">
+‎            <li><a href="#about">About</a></li>
+‎            <li><a href="#skills">Skills</a></li>
+‎            <li><a href="#software">Software</a></li>
+‎        </ul>
+‎    </nav>
+‎
+‎    <section class="h-screen flex flex-col justify-center items-center text-center p-4">
+‎        <h1 class="hero-text mb-4">Md. Riad Hasan <br> Mirja</h1>
+‎        <p class="text-xl text-gray-400 max-w-2xl">CSE Student | Game Developer | Web Developer </p>
+‎        <div class="mt-10 animate-bounce">↓ Scroll to explore</div>
+‎    </section>
+‎
+‎    <section id="about" class="min-h-screen flex items-center justify-center p-10">
+‎        <div class="glass p-12 rounded-3xl max-w-4xl section-reveal">
+‎            <h2 class="text-4xl font-bold mb-6 text-cyan-400">Computer Science & Engineering</h2>
+‎            <p class="text-lg leading-relaxed text-gray-300">
+‎                “I am currently studying in the CSE department. Creating something new through technology is my passion. Especially game development and web technology attract me the most.”‎            </p>
+‎        </div>
+‎    </section>
+‎
+‎    <section id="skills" class="py-20 px-10">
+‎        <h2 class="text-center text-5xl font-bold mb-16">Core Skills</h2>
+‎        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+‎            <div class="glass p-8 rounded-2xl text-center skill-card">Game Development</div>
+‎            <div class="glass p-8 rounded-2xl text-center skill-card">Web Development</div>
+‎            <div class="glass p-8 rounded-2xl text-center skill-card">Programming</div>
+‎            <div class="glass p-8 rounded-2xl text-center skill-card text-yellow-500 font-bold">Hacking</div>
+‎        </div>
+‎    </section>
+‎
+‎    <section id="software" class="py-20 px-10 bg-[#0a0a0a]">
+‎        <h2 class="text-center text-5xl font-bold mb-16">Software Arsenal</h2>
+‎        <div class="flex flex-wrap justify-center gap-10">
+‎            <div class="p-10 glass rounded-full w-48 h-48 flex items-center justify-center text-xl font-bold hover:scale-110 transition-transform">Unity</div>
+‎            <div class="p-10 glass rounded-full w-48 h-48 flex items-center justify-center text-xl font-bold hover:scale-110 transition-transform">Fusion 360</div>
+‎            <div class="p-10 glass rounded-full w-48 h-48 flex items-center justify-center text-xl font-bold hover:scale-110 transition-transform">YOLO V8</div>
+‎        </div>
+‎    </section>
+‎
+‎    <script src="script.js"></script>
+‎</body>
+‎</html>
+‎
